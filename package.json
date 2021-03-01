@@ -1,0 +1,15 @@
+{
+	"name": "test-api",
+	"version": "0.0.1",
+	"license": "MIT",
+	"dependencies": {
+		"ajv": "^7.1.1",
+		"cheerio": "^1.0.0-rc.5",
+		"dotenv": "^8.2.0"
+	},
+	"devDependencies": {
+		"vercel": "^19.0.1"
+	},
+	"main": "index.js",
+	"author": "Cody Barr <cody.barr@gmail.com>"
+}

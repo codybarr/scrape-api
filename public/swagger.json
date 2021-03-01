@@ -1,0 +1,40 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Test API",
+		"description": "Test API for sending back specific status codes.",
+		"version": "0.0.1",
+		"license": {
+			"name": "MIT"
+		}
+	},
+	"host": "https://test-api-ten.vercel.app",
+	"basePath": "/api",
+	"tags": [
+		{
+			"name": "status",
+			"description": "Query to receive specified status code."
+		}
+	],
+	"schemes": ["https"],
+	"paths": {
+		"/status/[code]": {
+			"get": {
+				"tags": ["status"],
+				"summary": "Query to recieve specified status code.",
+				"produces": ["application/json"],
+				"responses": {
+					"200": { "description": "Successful operation" },
+					"400": { "description": "Something went wrong." }
+				}
+			}
+		},
+		"/status/random": {
+			"get": {
+				"tags": ["status"],
+				"summary": "Query to recieve a random status code."
+			}
+		}
+	},
+	"definitions": {}
+}

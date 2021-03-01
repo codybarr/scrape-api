@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["title", "url", "selector"],
+    "properties": {
+      "title": { "type": "string" },
+      "url": { "type": "string" },
+      "selector": { "type": "string" }
+    }
+  }
+}
